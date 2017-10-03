@@ -1,0 +1,9 @@
+<div class="detailContainer" *ngIf="detailSelectedHero"  >
+    <h2>{{detailSelectedHero.name}}   HERO 1</h2>
+    <div><label>id: </label>{{detailSelectedHero.id}}</div>
+    <input type="text"  value="{{detailSelectedHero.name}}" />
+    <button type="button"  (click)="logHero()">showLog</button>
+    <button type="button"  (click)="goBack()">back</button>
+  </div>
+<!-- [ngModel]="detailSelectedHero.name" -->
+ 
